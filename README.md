@@ -32,3 +32,22 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Module and Endpoints
+
+please check the documentation postman here (https://documenter.getpostman.com/view/15047366/UV5WDd7V#intro)
+
+### Users Module (`/v1/users`)
+
+| | | |
+|-|-|-|
+| `GET` | `/` | get all app |
+<br>
+
+### Omdb Module (`/v1/omdb`)
+
+| | | |
+|-|-|-|
+| `GET` | `/` | get all app |
+| `GET` | `/:id` | get app with certain id |
+<br>
