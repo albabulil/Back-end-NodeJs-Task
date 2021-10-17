@@ -1,0 +1,18 @@
+const arr = ['kita', 'atik', 'tika', 'aku', 'kia', 'makan', 'kua']
+ 
+function anagram(value){
+    const result=[];
+    
+    for(let val of value){
+        let sort = val.split("").sort().join("");
+        if (result[sort]) {
+            result[sort].push(val);
+        } else {
+            result[sort] = [val];
+        }
+    }
+    
+    return Object.values(result);
+}
+
+console.log(anagram(arr))

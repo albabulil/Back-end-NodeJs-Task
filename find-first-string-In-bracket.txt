@@ -1,0 +1,5 @@
+findFirstStringInBracket(str) {
+    var regExp = /\(([^()]+)\)/g;
+    var result = regExp.exec(str);
+    return  result[1]
+}
